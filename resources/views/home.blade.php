@@ -25,6 +25,8 @@
                 </div>
             @endforeach
 
-        </div>
+            {{-- paginate the lyrics --}}
+            {{ $lyrics->links() }}
+        </div>   
     </div>
 </x-app-layout>

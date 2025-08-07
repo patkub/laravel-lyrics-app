@@ -8,7 +8,7 @@ class HomeController extends Controller
 {
   public function index()
   {
-    $lyrics = Lyrics::all();
+    $lyrics = Lyrics::paginate(5);
     return view('home', compact('lyrics'));
   }
 }
