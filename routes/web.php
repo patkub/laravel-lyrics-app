@@ -11,7 +11,7 @@ Route::get('/', function () {
 });
 
 Route::get('/home', [HomeController::class, 'index'])->middleware(['auth', 'verified'])->name('home');
-
+Route::get('/search', [HomeController::class, 'search'])->middleware(['auth', 'verified'])->name('lyrics.search');
 
 // display form to add lyrics
 Route::get('/add-lyrics', function () {
