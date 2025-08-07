@@ -27,7 +27,7 @@
         <div class="flex flex-wrap -mx-3 mb-3">
             <div class="w-full px-3 mb-6 md:mb-0">
                 <label class="block uppercase tracking-wide text-gray-700 dark:text-gray-100 text-xs font-bold mb-2" for="youtube-link">
-                    Youtube Link
+                    Youtube Link ( https://www.youtube.com/embed/BUEMn8IeDfQ )
                 </label>
                 <input
                     class="appearance-none block w-full bg-gray-200 dark:bg-gray-900 text-gray-700 dark:text-gray-100 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
