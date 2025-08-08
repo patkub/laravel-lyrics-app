@@ -9,7 +9,7 @@ class HomeController extends Controller
 {
   public function index()
   {
-    $lyrics = Lyrics::paginate(5);
+    $lyrics = Lyrics::orderBy('song_name', 'asc')->paginate(10);
     return view('home', compact('lyrics'));
   }
 
@@ -24,7 +24,7 @@ class HomeController extends Controller
         ->orWhere('artist_name', 'like', '%' . $search . '%');
     }
 
-    $lyrics = $query->paginate(10)->withQueryString();
+    $lyrics = $query->orderBy('song_name', 'asc')->paginate(10)->withQueryString();
 
     return view('home', compact('lyrics'));
   }
