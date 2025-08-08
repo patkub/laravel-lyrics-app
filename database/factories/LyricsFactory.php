@@ -19,7 +19,7 @@ class LyricsFactory extends Factory
         return [
             'song_name' => fake()->name(),
             'artist_name' => fake()->name(),
-            'youtube_link' => fake()->link(),
+            'youtube_link' => fake()->url(),
             'foreign_lyrics' => fake()->text(),
             'english_lyrics' => fake()->text()
         ];

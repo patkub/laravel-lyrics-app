@@ -15,14 +15,10 @@
                     </p>
 
                     <!-- Lyrics side by side -->
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="text-xl p-4">
-                            {{ $lyrics->foreign_lyrics }}
-                        </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 whitespace-pre-wrap">
+                        <div class="text-xl p-4">{{ $lyrics->foreign_lyrics }}</div>
 
-                        <div class="text-xl p-4">
-                            {{ $lyrics->english_lyrics }}
-                        </div>
+                        <div class="text-xl p-4">{{ $lyrics->english_lyrics }}</div>
                     </div>
 
                 </div>
