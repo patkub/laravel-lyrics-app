@@ -22,7 +22,7 @@ class AddLyricsController extends Controller
         $english_lyrics = $request->input('english');
 
         // Assert not null
-        if (is_null($song_name) || is_null($artist_name) || is_null($foreign_lyrics) || is_null($english_lyrics)) {
+        if (is_null($song_name) || is_null($artist_name) || is_null($youtube_link) || is_null($foreign_lyrics) || is_null($english_lyrics)) {
             Log::error('Form data is incomplete');
             return redirect()->back()->withErrors('All fields are required.');
         }
