@@ -31,13 +31,13 @@ class AddLyricsController extends Controller
         // ...
         Log::debug('Song: ' . $song_name . ', Artist: ' . $artist_name);
 
-        new Lyrics([
+        (new Lyrics([
             'song_name' => $song_name,
             'artist_name' => $artist_name,
             'youtube_link' => $youtube_link,
             'foreign_lyrics' => $foreign_lyrics,
             'english_lyrics' => $english_lyrics,
-        ])->save();
+        ]))->save();
 
         // Redirect or return a view
         return redirect()->back()->with('success', 'Lyrics added successfully!');
